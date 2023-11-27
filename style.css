@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+caption{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3262F7;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    border-radius: 16px;
+    padding:16px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dataJob{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 32px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #CDFEE4;
+    border-radius: 100px;
+    margin-right: 8px;
+}
+
+.check{
+    display: flex;
+    align-items:baseline;
+    margin-top: 8px;
+}
+
+.checkicon{
+    width: 10px;
+    height: 10px;
+    border: none;
+    margin-right: 8px;
+}
+
+.pills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+}
+
+.pill{
+    background-color: #172D5F;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+button{
+    background-color: #fafafa;
+    font-size: 15px;
+    color: #3362F8;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1100px){
+    .card, .content, .dataJob{
+        flex-direction: column;
+    }
+
+    .dataJob{
+        margin-right: 0;
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-around;
+    }
+    img{
+        margin-bottom: 8px;
+    }
+
+    .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .checkicon{
+        margin-top: 8px;
+    }
+
+    .pills{
+        justify-content: space-evenly;
+    }
+
+    button{
+        width: 100%;
+        display: block;
+        align-items: center;
+    }
+  }
